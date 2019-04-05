@@ -1,6 +1,6 @@
 # Research at Brain-Computer Interface Lab
 
-For my research, I used MATLAB signal-processing and statistical toolbox to compute features (alpha asymmetry, alpha power, beta power, theta power) of brain EEG signals across 32 channels and five subjects and analyzed trends in these features in relation to subject's valence/arousal ratings after viewing affective [IAPS](https://en.wikipedia.org/wiki/International_Affective_Picture_System) images
+For my research, I used MATLAB signal-processing and statistical toolbox to compute features (alpha-beta asymmetry ratio, alpha power, beta power, theta power) of brain EEG signals across 32 channels and five subjects and analyzed trends in these features in relation to subject's valence/arousal ratings after viewing affective [IAPS](https://en.wikipedia.org/wiki/International_Affective_Picture_System) images
 
 ## Research
 
