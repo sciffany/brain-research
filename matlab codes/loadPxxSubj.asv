@@ -1,0 +1,76 @@
+function pxxSubj = loadPxxSubj(subject)
+
+%subject ='Yiheng';
+
+datadir = 'C:\Users\User\Documents\SRP\matlab\Matlab Reference\LoadEEGFunctions\';
+dataTrainingFolder = 'DataTraining';
+
+Raw_sub = loadeegdata(subject,'rootdir', datadir,'datadir',dataTrainingFolder);
+
+Raw_sub.EEG = double(Raw_sub.EEG)*Raw_sub.resolution;
+sel_chan = Raw_sub.sel_chan_list;
+
+nSelChan = size(sel_chan);
+sel_chan_no = zeros(nSelChan, 1);
+
+for a = 1:nSelChan
+    channel = sel_chan(a, 1);
+    [rn, cn]=find(strcmp(Raw_sub.chan_list, channel));
+    sel_chan_no(a, 1) = rn;
+end
+
+nChs = 40;                  %Number of Channels
+nSample = 1500;             %Length of Sample
+nOpen = 500;                %Length of Open Eyes
+nClose = 3000;              %Length of Close Eyes
+
+Fs = 250;                   %Sampling frequency
+T = 1/Fs;                   %Sample time 
+L = nSample;                %Length of signal 
+t = (0:L-1)*T;              %Time vector
+i = (1:L)                   %counter
+
+pxxSubj = {};
+for arousal = 1:3
+    
+    
+    
+    baseStim = 229 + arousal;
+
+    stimLocations=find(Raw_sub.stimcode==baseStim | Raw_sub.stimcode==baseStim+3 | Raw_sub.stimcode==baseStim+6);
+    nTrials = size(stimLocations, 2);
+    stimTimings = Raw_sub.stimpos(stimLocations);
+    %
+    %{
+    stimLocations=find(Raw_sub.stimcode==240);
+    stimLocations = stimLocations(subjArouse(arousal,:)) -1; %finds the position of stimcodes with that arousal value
+    
+    nTrials = size(stimLocations, 2);
+    stimTimings = Raw_sub.stimpos(stimLocations);
+    
+    baseLocations = stimLocations - 2;
+    baseTimings = Raw_sub.stimpos(baseLocations);
+    %}
+    
+    for n = 1:nTrials
+
+        %extracts the channel signal from channel and makes them vertical
+        y =  extract(stimTimings(n), nSample, Raw_sub.EEG, sel_chan_no);
+        y = y';
+
+        %detrends and filters
+        y = detrend(y);
+        y = generalFilter(4, 40, y);
+
+        for i=1:size(sel_chan_no)
+
+            pxx(:,i) = pwelch(y(:,i), 250, 125);
+
+        end
+        pxxCat(:,:,n) = pxx(:,:);
+
+        end2
+    pxxSubj{arousal, 1} = pxxCat(:,:,:);
+
+end
+

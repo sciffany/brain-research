@@ -1,0 +1,63 @@
+Opening Log file...
+NeuroScan created: 6/15/2011 3:26:46 PM
+Connection created to 127.0.0.1:4000
+Send:CS_StartACQ:0
+Send:CC_ReqBasicInf:0
+Send:CC_ReqStartData:0
+Recv: CS_StartACQ:0
+Recv: CS_StartACQ:0
+Recv: DINF_BasicHeader:28
+NeuroScan: received 85 differ from code 84
+NeuroScan: received 86 differ from code 85
+NeuroScan: received 87 differ from code 86
+NeuroScan: received 88 differ from code 87
+NeuroScan: received 89 differ from code 88
+NeuroScan: received 90 differ from code 89
+Send:CC_ReqStopData:0
+Send:CS_StopACQ:0
+Send:CG_CloseupConnection:0
+Recv: CS_StopACQ:0
+Recv: CS_StopACQ:0
+Recv: CG_CloseupConnection:0
+Connection created to 127.0.0.1:4000
+Send:CS_StartACQ:0
+Send:CC_ReqBasicInf:0
+Send:CC_ReqStartData:0
+Recv: CS_StartACQ:0
+Recv: CS_StartACQ:0
+Recv: DINF_BasicHeader:28
+NeuroScan: received 66 differ from code 65
+NeuroScan: received 67 differ from code 66
+NeuroScan: received 68 differ from code 67
+NeuroScan: received 69 differ from code 68
+NeuroScan: received 70 differ from code 69
+NeuroScan: received 71 differ from code 70
+NeuroScan: received 72 differ from code 71
+NeuroScan: received 73 differ from code 72
+NeuroScan: received 74 differ from code 73
+NeuroScan: received 75 differ from code 74
+NeuroScan: received 76 differ from code 75
+NeuroScan: received 77 differ from code 76
+NeuroScan: received 78 differ from code 77
+NeuroScan: received 79 differ from code 78
+NeuroScan: received 80 differ from code 79
+NeuroScan: received 81 differ from code 80
+NeuroScan: received 82 differ from code 81
+NeuroScan: received 83 differ from code 82
+NeuroScan: received 84 differ from code 83
+NeuroScan: received 85 differ from code 84
+NeuroScan: received 86 differ from code 85
+NeuroScan: received 87 differ from code 86
+NeuroScan: received 88 differ from code 87
+NeuroScan: received 89 differ from code 88
+NeuroScan: received 90 differ from code 89
+NeuroScan: received 65 differ from code 90
+NeuroScan: received 90 differ from code 65
+NeuroScan: received 65 differ from code 90
+Send:CC_ReqStopData:0
+Send:CS_StopACQ:0
+Send:CG_CloseupConnection:0
+Recv: CS_StopACQ:0
+Recv: CS_StopACQ:0
+Recv: CG_CloseupConnection:0
+Closing log file.

@@ -1,0 +1,9 @@
+%takes a segment of signal from EEG data
+%returns a vector of amplitudes
+
+function [timeVector, signalVector] = extract(startTime, signalLength, EEGdata, channel)
+
+i = (stimTimings(n):stimTimings(n)+nSample-1) % counter
+y = Raw_sub.EEG(rn, i);  
+    
+
