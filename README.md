@@ -11,7 +11,7 @@ Please refer to the files below to get an overview of my research
   Note: .pdf file might take a while to load
   
 * View my research poster:
-  <img src="/All%20Submissions%20for%20Compilation/Poster/poster.jpg" width="800">
+  <img src="/All%20Submissions%20for%20Compilation/Poster/poster.png" width="800">
   
 
 ## MATLAB Codes
