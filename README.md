@@ -26,7 +26,7 @@ Please refer to the files below to get an overview of my research
 
 [`generalFilter.m`](/MATLAB%20codes%20(compiled)/generalFilter.m) – returns a filtered signal after detrending and filtering a raw signal given highpass and lowpass value
 
-[`loadPxx.m`](/MATLAB%20codes%20(compiled)/loadPxx.m) - calculates features of brain signals (alpha band, beta band, theta band) using high-pass and low-pass filters and pwelch.
+[`loadPxxSubj.m`](/MATLAB%20codes%20(compiled)/loadPxxSubj.m) - calculates features of brain signals (alpha band, beta band, theta band) using high-pass and low-pass filters and pwelch.
 
 [`loadPxxSubjPrint.m`](/MATLAB%20codes%20(compiled)/loadPxxSubjPrint.m) – plots the pwelch of a frequency band for high, medium and low levels of valence/arousal for one subject
 
