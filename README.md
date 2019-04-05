@@ -6,9 +6,9 @@ For my research, I used MATLAB signal-processing and statistical toolbox to comp
 
 Please refer to the files below to get an overview of my research
 
-* [Read my paper](/SSEF%20Main%20Submission.pdf)
+* [Read my paper](/All%20Submissions%20for%20Compilation/SSEF%20Submissions/SSEF%20Main%20Submission.pdf)
 
-* [View my poster](/poster.pdf)
+* [View my poster](/All%20Submissions%20for%20Compilation/Poster/poster.pdf)
 
 Note: These .pdf files might take a while to load
 
