@@ -1,1 +1,0 @@
-the actual EEG we process is =  double(Raw_sub.EEG)*Raw_sub.resolution
