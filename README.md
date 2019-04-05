@@ -2,15 +2,17 @@
 
 For my research, I used MATLAB signal-processing and statistical toolbox to compute features (alpha asymmetry, alpha power, beta power, theta power) of brain EEG signals across 32 channels and five subjects and analyzed trends in these features in relation to subject's valence/arousal ratings after viewing affective [IAPS](https://en.wikipedia.org/wiki/International_Affective_Picture_System) images
 
-## Results
+## Research
 
 Please refer to the files below to get an overview of my research
 
-* [Read my paper](/All%20Submissions%20for%20Compilation/SSEF%20Submissions/SSEF%20Main%20Submission.pdf)
-
-* [View my poster](/All%20Submissions%20for%20Compilation/Poster/poster.pdf)
-
-Note: These .pdf files might take a while to load
+* [Read my research paper](/All%20Submissions%20for%20Compilation/SSEF%20Submissions/SSEF%20Main%20Submission.pdf):
+  
+  Note: .pdf file might take a while to load
+  
+* View my research poster:
+  <img src="/All%20Submissions%20for%20Compilation/Poster/poster.jpg" width="800">
+  
 
 ## MATLAB Codes
 
